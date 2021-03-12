@@ -134,7 +134,21 @@ $(document).ready(function(){
   }
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
+  var figure6 = $(".typ");
+  var vid6 = figure6.find("video");
 
+  [].forEach.call(figure6, function (item6,index6) {
+      item6.addEventListener('mouseover', hoverVideo6.bind(item6,index6), false);
+      item6.addEventListener('mouseout', hideVideo6.bind(item6,index6), false);
+  });
+
+  function hoverVideo6(index6, e6) {
+      vid6[index6].play();
+  }
+
+  function hideVideo6(index6, e6) {
+      vid6[index6].pause();
+  }
 
 
 
