@@ -149,9 +149,6 @@
     <h3 class="desc">Hover over photos to preview</h3>
     <div class="carousel owl-carousel">
 
-
-
-
 <!-- ////////////////////////////////////////////////////////////////////////////// -->
       <div class="card box">
         <div class="box" data-tilt>
@@ -261,7 +258,7 @@
 
 
 
-     <div class="card box">
+      <div class="card box">
         <div class="box" data-tilt>
           <!-- <img src="images/1.jpg" alt=""> -->
           <!-- <video class="polystar3" >
@@ -519,7 +516,7 @@
 
     <!-- //////////////////////////////////////////////////////////////////////////////////////-->
   <br><br><br><br>
-    <form name="contact" method="POST" data-netlify="true" class="form">
+    <!-- <form name="contact" method="POST" data-netlify="true" class="form">
 
 <div class="column left">
 
@@ -548,7 +545,42 @@
   </div>
 </div>
 
-  </form>
+  </form> -->
+  <form name="contact" method="POST" data-netlify="true" class="form">
+
+<div class="column left">
+
+<div class="row">
+  <div class="d2"><input placeholder="name" class="textarea" type="text" name="name" /></div>
+
+      <div class="d1"><input placeholder="email" class="textarea" type="email" name="email" /></div>
+
+</div>
+
+</div>
+
+
+<div class="column right">
+<div class="row">
+
+      <div class="d3"><textarea placeholder="message" name="message" class="textaream"></textarea></div>
+
+      <div class="d5"><button onclick="runSpeechRecognition()" type="button" class="button" id="b1">Speech to Text</button> &nbsp; <span id="action"></span>
+
+<br>
+      <button type="submit" class="button" id="b2">Send</button>
+    </div>
+
+      <!-- <div class="d4"></div> -->
+
+
+
+
+
+</div>
+</div>
+
+</form>
     <!--///////////////////////////////////////////////////////////////////////////////////////////     -->
 
 
@@ -571,8 +603,9 @@
 
             // This runs when the speech recognition service starts
             recognition.onstart = function() {
-                action.innerHTML = "<small>listening, please speak...</small>";
+                action.innerHTML = "<small>listening</small>";
                 // action.innerHTML.style.color = '#fff';
+
 
 
 
