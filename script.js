@@ -41,12 +41,28 @@ $(document).ready(function(){
 
     }
   });
+  //////////////////////////////////////////////////isustain(ALWAYS CHANGE VARIABLE NAMESSSSS)
+    var figure0 = $(".fusic");
+    var vid0 = figure0.find("video");
 
+    [].forEach.call(figure0, function (item0,index0) {
+        item0.addEventListener('mouseover', hoverVideo0.bind(item0,index0), false);
+        item0.addEventListener('mouseout', hideVideo0.bind(item0,index0), false);
+    });
+
+    function hoverVideo0(index0, e0) {
+        vid0[index0].play();
+    }
+
+    function hideVideo0(index0, e0) {
+        vid0[index0].pause();
+    }
+  //////////////////////////////////////////////////////////////////////////////////
 
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////fusic
-  var figure = $(".fusic");
+  var figure = $(".delphi");
   var vid = figure.find("video");
 
   [].forEach.call(figure, function (item,index) {
@@ -134,6 +150,7 @@ $(document).ready(function(){
   }
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
+///////////////////covid(ALWAYS CHANGE VARIABLE NAMESSSSS)
   var figure6 = $(".typ");
   var vid6 = figure6.find("video");
 
@@ -149,6 +166,25 @@ $(document).ready(function(){
   function hideVideo6(index6, e6) {
       vid6[index6].pause();
   }
+//////////////////////////////////////////////////////////////////
+
+///////////////////covid(ALWAYS CHANGE VARIABLE NAMESSSSS)
+  var figure7 = $(".chitra");
+  var vid7 = figure7.find("video");
+
+  [].forEach.call(figure7, function (item7,index7) {
+      item7.addEventListener('mouseover', hoverVideo7.bind(item7,index7), false);
+      item7.addEventListener('mouseout', hideVideo7.bind(item7,index7), false);
+  });
+
+  function hoverVideo7(index7, e7) {
+      vid7[index7].play();
+  }
+
+  function hideVideo7(index7, e7) {
+      vid7[index7].pause();
+  }
+//////////////////////////////////////////////////////////////////
 
 
 
