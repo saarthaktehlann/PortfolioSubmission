@@ -92,6 +92,7 @@ html{
   background: url("images/e.jpg") no-repeat center;
   height: 100vh;
   background-size: cover;
+  background-position: right;
   background-attachment: fixed;
   color: #fff;
   min-height: 500px;
