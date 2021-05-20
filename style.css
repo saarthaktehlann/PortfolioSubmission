@@ -91,7 +91,7 @@ html{
   display: flex;
   background: url("images/e.jpg") no-repeat center;
   height: 100vh;
-  background-size: cover;
+  background-size: contain;
   background-position: right;
   background-attachment: fixed;
   color: #fff;
