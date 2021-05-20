@@ -91,7 +91,7 @@ html{
   display: flex;
   background: url("images/e.jpg") no-repeat center;
   height: 100vh;
-  background-size: contain;
+  background-size: cover;
   background-position: right;
   background-attachment: fixed;
   color: #fff;
@@ -697,7 +697,9 @@ small{
 
 /*responvive media query*/
 @media(max-width: 1300px){
-  .home .max-width{margin-left: 0px;}
+  .home .max-width{margin-left: 0px;
+    background-size: contain;
+  }
 }
 
 @media(max-width: 1300px){
